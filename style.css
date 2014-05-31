@@ -15,8 +15,8 @@ body {
 	border-radius:1em;
 	margin-top: 200px;
 	width: 432px;
-	height: 100px;
-	background: rgba(0, 0, 0, 0.85);
+	height: 300px;
+	background: rgba(0, 0, 0, 0.70);
 	margin: 200px auto 0 auto;
 	padding:1em;
 	box-sizing:border-box;
@@ -32,7 +32,7 @@ body {
 	width: 100%;
 	padding:1em;
 	top: 0;
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0,0,0);
 	height: 170px;
 	display: block;
 	font-size: 2rem;
