@@ -1,5 +1,5 @@
 html { 
-  background: url( http://i1.minus.com/jbfiF0BQG8e3tS.jpg) no-repeat center center fixed; 
+  background: url(helping-hand.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -113,28 +113,19 @@ img {
 	align: center;
 }
  
-
-	background:#ffffff;
-	width: 600px;
-	height: 400px;
-	overflow: scroll;
-	margin-bottom: 100px;
-}
- 
-
-button{
+button, .button{
 	background-color: #408c99;
 	border-radius: 5px;
 	border-color: #679ab7;
-	width: 100px;
-	height: 30px;
-	font-size: 20px;
+	border-width:2px;
+	text-align:center;
+	font-size: 1rem;
 	background-image: -webkit-linear-gradient(#679ab7, #3a7094);
+	cursor:pointer;
+	color:white;
+	padding:0.1em .3em .1em .3em;
 }
-.saveButton:hover {
-	background-color:#408c99;
-}
-
+.button:hover{color:white;}
 
 #buttonDiv{
 	position: relative;
