@@ -178,6 +178,10 @@ p {
 	color: #ffffff;
 }
 
+#special{
+	font-size: 5 rem;
+}
+
 #label{
 	font-size: 2rem;
 	font-family: Calibri;
