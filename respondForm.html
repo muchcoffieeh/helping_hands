@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>Respond Form</title>
+	<link type="text/css" rel="stylesheet" href="style.css"/>
+</head>
+<body>
+	<div class="topLinks">
+			<a href="index.html">HOME</a>
+			<a href="profile.html">ACCOUNT</a>
+			<a href="new1.html">MESSAGES</a>
+	</div>
+	
+	<div id="introBox">
+			<div style="float: left; width: 20%; margin-bottom: 2rem">
+			<img style="width: 70%;" src="helpLogo.png">
+			</div>
+			
+			<div style="float: right; width: 10%; margin-bottom: 2rem">
+			<p>Welcome</p>
+			<p id="orgName">Serena Xu!</p>	
+			</div>
+	</div>
+	
+	<div id="box" style="border-radius:1em; margin: 2% auto 0 auto; width: 80%; height: 32em;">
+		<header class="orgName">Donation from Serena Xu</header>
+		<div class="donatePhoto">			
+			<img alt="Insert Photo"src="donationPhoto.jpg" height="100%">
+			<div style="float: left; padding-right: 20%;">
+			<p>Please upload a clear photo</p>
+			<button class="tfbutton" onclick="window.location.href='dophot.html'" href="dophoto.html">Upload Photo</button>
+			</div>
+		</div>
+		
+		<div style="margin-top: 8%;">
+			<ul>
+				<li><label for="name">What are you donating?</label> <input type="text" name="name" id="name" required />
+				</li>
+				<li><label for="name">How much are you donating?</label> <input type="number" name="name" id="name" required /></li>
+				<li><label for="name">Can you transport to specified location?</label> 
+					<input style="width: 3em;" type="radio" name="q1" value="y">Yes
+					<input style="width: 3em;" type="radio" name="q1" value="n">No
+				</li>
+				<li><p></p></li>
+				
+			</ul>
+		</div>
+		<p></p>
+		<center><button class="tfbutton" onclick="window.location.href='donationSubmitted.html'" href="donationSubmitted.html">Complete Donation</button></center>
+	</div>
+	
+<footer>
+	<nav class="bottomLinks">
+			<a href="index.html">About Us</a>
+			<a href="profile.html">Community</a>
+			<a href="new1.html">Education</a>
+			<a >(c) HelpingHands, 2014</a>
+	</nav>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>LOG IN</title>
+	<link type="text/css" rel="stylesheet" href="style.css"/>
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.8/jquery.validate.min.js"></script>
+	<script type="text/javascript"> $(document).ready(function(){ $("#subForm").validate(); }); </script>
+
+</head>
+<body>
+	<div class="topLinks">
+			<a href="index.html">HOME</a>
+			<!--
+			<a href="profile.html">ACCOUNT</a>
+			<a href="new1.html">MESSAGES</a>
+		-->
+	</div>
+
+	<div id="promiseBox" style="margin-top: 15%; height: 33em;">
+		<div style="float: none; margin-bottom: 2rem">
+			<img class="logo" style="width: 70%;" src="helpLogo.png">
+		</div>	
+
+		<form action="checkUserPassword" method="post" id="subForm">
+			<ul>
+				<li>
+					<label style="width: 5em;" for="l133578-133578">Username:</label> <input type="text" name="cm-133578-133578" id="user" required/>
+				</li>
+				<li>
+					<label style="width: 5em;" for="l133578-133578">Password:</label> <input type="text" name="cm-133578-133578" id="pwordVer" required/>
+				</li>
+				<li><p></p><p></p></li>
+				<input class="tfbutton" type="submit" value="Sign In" />
+				<li>
+					<p><a href="newUser.html">Not registered? Create a free account.</a></p>
+				</li>
+			</ul>
+		</form>
+	
+	</div>
+<footer>
+	<nav class="bottomLinks">
+			<a href="index.html">About Us</a>
+			<a href="profile.html">Community</a>
+			<a href="new1.html">Education</a>
+			<a >(c) HelpingHands, 2014</a>
+	</nav>
+</footer>
+
+</body>
+</html>

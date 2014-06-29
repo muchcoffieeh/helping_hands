@@ -1,0 +1,144 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>Name of Request</title>
+	<link type="text/css" rel="stylesheet" href="style.css"/>
+</head>
+<body>
+	<div class="topLinks">
+			<a href="index.html">HOME</a>
+			<a href="profile.html">ACCOUNT</a>
+			<a href="new1.html">MESSAGES</a>
+	</div>
+	
+	<div id="introBox">
+			<div style="float: left; width: 20%; margin-bottom: 2rem">
+			<img style="width: 70%;" src="helpLogo.png">
+			</div>
+			
+			<div style="float: right; width: 10%; margin-bottom: 2rem">
+			<p>Welcome</p>
+			<p id="orgName">Serena Xu!</p>	
+			</div>
+	</div>
+
+	<div id="contentBox" style="margin: 5% auto 5% auto; width: 80%; height: 30em;">
+	<div id="box" style="float: left; width: 40%;">
+
+			<ul class="account">
+				<li>
+					<div style="width: 35%; float: left; height: 80%;">
+						<label for="name">Need:</label>
+					</div>
+
+					<div style="width: 65%; float: right; height: 80%;">
+					<p class="orgDes">50 Bottles of water</p>
+					</div>
+				</li>
+
+				<li><hr></li>
+
+				<li>
+					<div style="width: 35%; float: left; height: 80%;">
+						<label for="name">Requested by:</label>
+					</div>
+
+					<div style="width: 65%; float: right; height: 80%;">
+					<p class="orgDes">Salvation Army</p>
+					</div>
+				</li>
+
+				<li><hr></li>
+
+				<li>
+					<div style="width: 35%; float: left; height: 80%;">
+						<label for="name">Purpose:</label>
+					</div>
+
+					<div style="width: 65%; float: right; height: 80%;">
+					<p class="orgDes">Children's Day Event</p>
+					</div>
+				</li>
+
+				<li><hr></li>
+
+				<li>
+					<div style="width: 35%; float: left; height: 80%;">
+						<label for="name">Details:</label>
+					</div>
+
+					<div style="width: 65%; float: right; height: 80%;">
+					<p class="orgDes">Children's Day is having our annual community event on 7/2/14. We have volunteers from across the county. Your donation of water will hydrate our lovely volunteers.</p>
+					</div>
+				</li>
+
+				<li><hr></li>
+
+				<li>
+					<div style="width: 35%; float: left; height: 80%;">
+						<label for="name">Partial Donation Accepted:</label>
+					</div>
+
+					<div style="width: 65%; float: right; height: 80%;">
+					<p class="orgDes">yes</p>
+					</div>
+				</li>
+
+				<li><hr></li>
+
+				<li>
+					<div style="width: 35%; float: left; height: 80%;">
+						<label for="name">Donors need to transport:</label>
+					</div>
+
+					<div style="width: 65%; float: right; height: 80%;">
+					<p class="orgDes">no</p>
+					</div>
+				</li>
+
+				<li><hr></li>
+
+			</ul>
+	</div>
+
+	<div id="box" style="height: 100%; width: 40%; float: right;">
+		<header class="orgName">Please complete the donation form.</header>
+		<div class="donatePhoto">
+			<div style="padding-left: 4%; float: left; height: 100%;">			
+				<img alt="Insert Photo"src="images/donationPhoto.jpg" height="100%">
+			</div>
+			<div style="float: right; padding-right: 20%;">
+			<p>Upload a clear photo of donation</p>
+			<button class="tfbutton" onclick="window.location.href='dophot.html'" href="dophoto.html">Upload Photo</button>
+			</div>
+		</div>
+		
+		<div style="margin-top: 8%;">
+			<ul>
+				<li><label for="name">What are you donating?</label> <input type="text" name="name" id="name" required />
+				</li>
+				<li><label for="name">How much are you donating?</label> <input type="number" name="name" id="name" required /></li>
+				<li><label for="name">Can you transport to specified location?</label> 
+					<input style="width: 3em;" type="radio" name="q1" value="y">Yes
+					<input style="width: 3em;" type="radio" name="q1" value="n">No
+				</li>
+				<li><p></p></li>
+				
+			</ul>
+		</div>
+		<p></p>
+		<center><button class="tfbutton" onclick="window.location.href='donationSubmitted.html'" href="donationSubmitted.html">Complete Donation</button></center>
+	</div>
+	</div>
+
+<footer>
+	<nav class="bottomLinks">
+			<a href="index.html">About Us</a>
+			<a href="profile.html">Community</a>
+			<a href="new1.html">Education</a>
+			<a >(c) HelpingHands, 2014</a>
+	</nav>
+</footer>
+
+</body>
+</html>
