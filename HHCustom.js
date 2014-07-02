@@ -4,12 +4,24 @@ $(document).ready(function() {
  
     var email = $("#mail"); //textbox u are going to validate
     var emailInfo = $("#emailInfo"); //to display error message
+
+    var name = $("#name"); //textbox u are going to validate
+    var nameInfo = $("#nameInfo"); //to display error message
+
+    var address = $("#address"); //textbox u are going to validate
+    var addressInfo = $("#addressInfo"); //to display error message
+
+    var pword = $("#pword"); //textbox u are going to validate
+    var pwordInfo = $("#pwordInfo"); //to display error message
+
+    var pword = $("#pwordVer"); //textbox u are going to validate
+    var pwordInfo = $("#pwordVerInfo"); //to display error message
  
     //first validation on form submit
     form.submit(function() {
  
         // validation begin before submit
-        if (validateEmail() && validatePhone()) {
+        if (validateForm()) {
  
             return true;
         } else {
@@ -19,7 +31,24 @@ $(document).ready(function() {
  
     });
 
-    function validateEmail() {
+    function validateForm() {
+   	
+    	//validate for empty names
+    	if(name.val() == ""){
+    		name.addClass("error");
+            nameInfo.text("This field is required.");
+            nameInfo.addClass("error");
+            return false; 
+    	}
+
+    	//validate for empty addys
+    	if(address.val() == ""){
+    		address.addClass("error");
+            addressInfo.text("This field is required.");
+            addressInfo.addClass("error");
+            return false; 
+    	}
+
         //validation for empty emails
         if (email.val() == "") {
             email.addClass("error");
@@ -53,49 +82,23 @@ $(document).ready(function() {
             emailInfo.addClass("error");
             return false;
         }
-    }
-/*
-    //phone
-    var phone = $("#phone");
-    var phoneInfo = $("#phoneInfo");
 
-    var phoneVal = $("#phone").val();
-
-    function validatePhone(){
-    	if(phone.val() == ""){
-    		phone.addClass("error");
-    		phoneInfo.text("This field is required.");
-    		phone.addClass("error");
-    		return false;
-    	}
-    	else{
-    		phone.removeClass("error");
-    		phoneInfo.text("*");
-    		phoneInfo.removeClass("error");
+        //validate for empty pwords
+    	if(pword.val() == ""){
+    		pword.addClass("error");
+            pwordInfo.text("This field is required.");
+            pwordInfo.addClass("error");
+            return false; 
     	}
 
-    	//validation for proper phone numbers
-    	var stripped = phoneVal.replace(/[\(\)\.\-\ ]/g, '');
-
-    	if(isNaN(parseInt(stripped)))
-    		phone.addClass("error");
-    		phoneInfo.text("Valid phone number please.");
-    		phone.addClass("error");
-    		return false;
-    	else if (!(stripped.length == 10)){
-    		phone.addClass("error");
-    		phoneInfo.text("Valid phone number please.");
-    		phone.addClass("error");
-    		return false;
-    	}
-    	else{
-    		phone.removeClass("error");
-            phoneInfo.text("*");
-            phoneInfo.removeClass("error");
-            return true;
+    	//validate that pword matches the verify pword
+    	if(!(pwordVer.val() == pword.val())){
+    		pwordVer.addClass("error");
+            pwordVerInfo.text("This field is required.");
+            pwordVerInfo.addClass("error");
+            return false; 
     	}
     }
- */
 });
 
 

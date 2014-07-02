@@ -31,20 +31,21 @@
 		<p style="text-align: center;">*Required Fields</p>
 
 
-		<form onsubmit="return validateEmail()"method="post" id="subForm">
+		<form onsubmit="return validateForm()"method="post" id="subForm">
 			<ul class="longSign">
 
 				<li>
-					<label for="name">* Organization:</label> <input type="text" placeholder="This is your username" name="name" id="name" required />
+					<label for="name">* Organization:</label> <input type="text" placeholder="This is your username" name="name" id="name" />
+					<p style="margin:0; text-align: center;" id="nameInfo"></p>
 				</li>
 				<li>
-					<label for="address">* Address:</label> <input type="text" name="address" id="address" required />
+					<label for="address">* Address:</label> <input type="text" name="address" id="address" /><p style="margin:0; text-align: center;" id="addressInfo"></p>
 				</li>
 				<li>
 					<label for="contact">Name of Contact:</label> <input type="text" name="contact" id="contact"/>
 				</li>
 				<li>
-					<label for="phone">* Phone Number:</label> <input type="tel" id="phone" id="phone" required/><p style="margin:0; text-align: center;" id="phoneInfo"></p>
+					<label for="phone">* Phone Number:</label> <input type="tel" id="phone" id="phone" /><p style="margin:0; text-align: center;" id="phoneInfo"></p>
 				</li>
 				<li>
 					<label for="email">* E-mail:</label> <input type="email" name="email" id="email"/>
@@ -59,16 +60,13 @@
 				</li>
 				<p></p>
 				<li>
-					<label for="pword">* Create a password:</label> <input type="text" name="pword" id="pword" required/>
+					<label for="pword">* Create a password:</label> <input type="text" name="pword" id="pword"/><p style="margin:0; text-align: center;" id="pwordInfo"></p>
 				</li>
 				<li>
-					<label for="pwordVer">* Type password again:</label> <input type="text" name="pwordVer" id="pwordVer" required/>
+					<label for="pwordVer">* Type password again:</label> <input type="text" name="pwordVer" id="pwordVer" /><p style="margin:0; text-align: center;" id="pwordVerInfo"></p>
 				</li>
 				<li><p></p><p></p></li>
 				<input class="tfbutton" type="submit" value="Submit for Verification">
-				<!--
-				<button class="tfbutton" onclick="return validateForm();" href="orgVerify.html">Submit for Verification</button>
-			-->
 			</ul>
 
 		</form>  
