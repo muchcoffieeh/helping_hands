@@ -16,55 +16,133 @@
 			<img style="width: 70%;" src="helpLogo.png">
 			</div>
 			
-			<div style="float: right; width: 10%; margin-bottom: 2rem">
-			<p>Welcome</p>
-			<p id="contName">Serena Xu!</p>	
+			<div class="log" style="float: right; margin: 0 2rem 2rem 0">
+			<a href="contAccount.html" id="orgName">Serena Xu</a>	
+			<a action="logOut">Log Out</a>
 			</div>
 	</div>
-	
-	<div id="box" style="margin: 2% auto 0 auto; width: 80%; height: 25%;">
-		<center><header class="orgName">Serena Xu</header></center>
-		<div class="profileImg" style="padding-left: 2%; float: left">
-			<img src="profile.jpg" height="100%">
-		</div>
-		<div style="float: right; width: 50%;">
-			<label>Location</label>
-			<p class="orgLoc">San Francisco, CA</p>
-			<label>Contact</label>
-			<p class="orgNum">415222323</p>
-			<p class="orgEmail">person@gmail.com</p>
-			<button class="tfbutton" onclick="window.location.href='contAccountEdit.html'" href="postings.html">Edit Profile</button>
-		</div>
-		
-	</div>
 
-	<div id="box" style="padding: 2%; width: 45%; height: 35%; float: left; margin: 2% 2% 2% auto;">
-			<nav id="menu">
-						<p id="label" style= "margin-bottom: 0.2em">Active Contributions</p>
-						<hr id="titleLine">
-						<ul class="parent-menu">
-						<li><center><a href="#">Contribution 1</a></center>
-						</li>
-						<li><center><a href="#">Contribution 2</a></center>
-						</li>
-						</ul>
-					</nav>
+	<div class="overflowBox" style="margin: 5% auto 5% auto; width: 80%;">
+		<div id="box" style="float: left; width: 40%;">
+			<header class="reqHead" style="margin: 2% auto 5% auto; text-align: center;">Serena Xu</header>
 
-	</div>
-	
-		<div id="box" style="padding: 2%; width: 45%; height: 35%; float: right; margin: 2% 2% 2% auto;">
+			<ul class="account">
+				<li><hr></li>
+
+				<li>
+					<div style="width: 35%; float: left; height: 80%;">
+						<label for="name">Name:</label>
+					</div>
+
+					<div style="width: 65%; float: right; height: 80%;">
+					<p class="orgDes">Serena Xu</p>
+					</div>
+				</li>
+
+				<li><hr></li>
+
+				<li>
+					<div style="width: 35%; float: left; height: 80%;">
+						<label for="name">Location:</label>
+					</div>
+
+					<div style="width: 65%; float: right; height: 80%;">
+					<p class="orgDes">San Francisco</p>
+					</div>
+				</li>
+
+				<li><hr></li>
+
+				<li>
+					<div style="width: 35%; float: left; height: 80%;">
+						<label for="name">Phone Number:</label>
+					</div>
+
+					<div style="width: 65%; float: right; height: 80%;">
+					<p class="orgDes">415-222-8323</p>
+					</div>
+				</li>
+
+				<li><hr></li>
+
+				<li>
+					<div style="width: 35%; float: left; height: 80%;">
+						<label for="name">E-mail:</label>
+					</div>
+
+					<div style="width: 65%; float: right; height: 80%;">
+					<p class="orgDes">something@gmail.com</p>
+					</div>
+				</li>
+
+				<li><hr></li>
+
+			</ul>
+
+			<button class="tfbutton" onclick="window.location.href='contAccountEdit.html'" href="contAccountEdit.html">Edit Profile</button>
+
+		</div>
+
+		<div class="reqAcctBox"> 
+			<div id="box" style="height: 15em; margin-bottom: 3%;">
+
+				<header class="reqHead" style="margin: 2% auto 2% auto; text-align: center;">Active Donations</header>
+
+				<div style="height: 85%; overflow-y: scroll">
 					<nav id="menu">
-						<p id="label" style= "margin-bottom: 0.2em">Contribution History</p>
-						<hr id="titleLine">
 						<ul class="parent-menu">
-						<li><center><a href="#">Contribution 1</a></center>
+						<li>
+							<a href="#">
+								<div style="float: left;">Request Name</div>
+								<div style="float: right;">6/20/14</div>
+							</a>							
 						</li>
-						<li><center><a href="#">Contribution 2</a></center>
-						</li>
-						<li><center><a href="#">Contribution 3</a></center>
+						<li>
+							<a href="#">
+								<div style="float: left;">Request Name</div>
+								<div style="float: right;">6/16/14</div>
+							</a>							
 						</li>
 						</ul>
 					</nav>
+				</div>	
+
+			</div>
+			<div id="box" style=" height: 20em; ">
+				<header class="reqHead" style="margin: 2% auto 2% auto; text-align: center;">Donation History</header>
+
+				<div style="height: 85%; overflow-y: scroll">
+					<nav id="menu">
+						<ul class="parent-menu">
+						<li>
+							<a href="#">
+								<div style="float: left;">Request Name</div>
+								<div style="float: right;">6/13/14</div>
+							</a>							
+						</li>
+						<li>
+							<a href="#">
+								<div style="float: left;">Request Name</div>
+								<div style="float: right;">5/10/14</div>
+							</a>							
+						</li>
+						<li>
+							<a href="#">
+								<div style="float: left;">Request Name</div>
+								<div style="float: right;">5/1/14</div>
+							</a>							
+						</li>
+						<li>
+							<a href="#">
+								<div style="float: left;">Request Name</div>
+								<div style="float: right;">4/1/14</div>
+							</a>							
+						</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
 
 	</div>
 	
