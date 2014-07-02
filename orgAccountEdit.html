@@ -16,9 +16,9 @@
 			<img style="width: 70%;" src="helpLogo.png">
 			</div>
 			
-			<div style="float: right; width: 10%; margin-bottom: 2rem">
-			<p>Welcome</p>
-			<p id="orgName">Organization</p>	
+			<div style="float: right; margin: 0 2rem 2rem 0">
+			<a href="contAccount.html" id="orgName">Salvation Army</a>	
+			<a action="logOut">Log Out</a>
 			</div>
 	</div>
 
@@ -81,15 +81,15 @@
 		</div>
 
 		<div class="reqAcctBox"> 
-			<div id="box" style="height: 20em; margin-bottom: 3%; overflow-y: scroll;">
+			<div id="box" style="height: 15em; margin-bottom: 3%;">
 				<div>
 					<button class="tfbutton" onclick="window.location.href='orgAccount.html'" href="postings.html">Make New Request</button>
 				</div>
 
+				<header class="reqHead" style="margin: 2% auto 2% auto; text-align: center;">Active Requests</header>
+
 				<div style="height: 85%; overflow-y: scroll">
 					<nav id="menu">
-						<p id="label" style= "text-align: center; margin-bottom: 0.2em">Active Requests</p>
-						<hr>
 						<ul class="parent-menu">
 						<li>
 							<a href="#">
@@ -108,10 +108,11 @@
 				</div>	
 
 			</div>
-			<div id="box" style=" height: 20em;  overflow-y: scroll;">
-				<nav id="menu">
-						<p id="label" style= "text-align: center; margin-bottom: 0.2em">Request History</p>
-						<hr>
+			<div id="box" style=" height: 20em; ">
+				<header class="reqHead" style="margin: 2% auto 2% auto; text-align: center;">Request History</header>
+
+				<div style="height: 85%; overflow-y: scroll">
+					<nav id="menu">
 						<ul class="parent-menu">
 						<li>
 							<a href="#">
@@ -139,6 +140,7 @@
 						</li>
 						</ul>
 					</nav>
+				</div>
 			</div>
 		</div>
 

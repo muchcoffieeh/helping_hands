@@ -4,19 +4,14 @@
 	<title>NEW CONTRIBUTOR</title>
 	<link type="text/css" rel="stylesheet" href="style.css"/>
 
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.8/jquery.validate.min.js"></script>
-	<script type="text/javascript"> $(document).ready(function(){ $("#subForm").validate(); }); </script>
+	<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+	<script type="text/javascript" src="HHCustom.js"></script>
+	<script type="text/javascript" src="HHCustomPhone.js"></script>
 
-	<script type="text/javascript" src="hands.js"></script>
 </head>
 <body>
 	<div class="topLinks">
 			<a href="index.html">HOME</a>
-	<!--
-			<a href="profile.html">ACCOUNT</a>
-			<a href="new1.html">MESSAGES</a>
-	-->
 	</div>
 	
 	<div id="introBox">
@@ -24,37 +19,44 @@
 			<img class="logo" style="width: 70%;" src="helpLogo.png">
 			</div>
 			
-			<div style="float: right; width: 10%; margin-bottom: 2rem">
-			<a href="newUser.html">SIGN UP</a>
-			<a href="signIn.html">LOG IN</a>		
+			<div class="log" style="float: right; width: 10%; margin-bottom: 2rem">
+			<a href="newUser.html">Sign Up</a>
+			<a href="logIn.html">Log In</a>		
 			</div>
 	</div>
-
-	<div id="newAcctBox">
-		<div class="socialSign">
-			<header>Skip the long form</header>
-			<a href="fb.html">Register with Facebook</a>
-			<p></p>
-			<a href="fb.html">Register with Google Plus</a>
-		</div>
 		
-		<div class="vertLine" style="height: 100%">
-		</div>
-		
-		<div class="longSign">
+		<div id="box" style="padding: 3% 3% 3% 3%; margin: 2% auto 0 auto; width: 40%;">
 			<form action="orgVerify.html" method="post" id="subForm">
-			<header>Register</header>
-			<ul>
-				<li><label for="name">Name:</label> <input type="text" name="name" id="name" required /></li>
-				<li><label for="name">City:</label> <input type="text" name="name" id="name" required /></li>
-				<li><label for="name">Phone Number:</label> <input type="tel" name="name" id="name" required /></li>
-				<li><label for="l133578-133578">Email:</label> <input type="text" name="cm-133578-133578" id="email"  required /></li>
+			<header class="fulfilled" style="margin-bottom: 5%;">Make an Account</header>
+
+			<p style="text-align: center;">*Required Fields</p>
+
+			<ul class="longSign">
+				<li>
+					<label for="name">* Name:</label> <input placeholder="First Last" type="text" name="name" id="name" required />
+				</li>
+				<li>
+					<label for="city">City:</label> <input type="text" name="city" id="city"/>
+				</li>
+				<li>
+					<label for="phone">Phone Number:</label> <input type="tel" id="phone" id="phone"/><p style="margin:0; text-align: center;" id="phoneInfo"></p>
+				</li>
+				<li>
+					<label for="email">* E-mail:</label> <input type="email" name="email" id="email"/>
+					<p style="margin:0; text-align: center;" id="emailInfo"></p>
+				</li>
 				<p></p>
-				<li><label >Create a Username:</label> <input type="text" required/></li>
-				<li><label >Create a Password:</label> <input type="text" required/></li>
-				<li><label >Type Password Again:</label> <input type="text" required/></li>
+				<li>
+					<label for="uname">* Create a Username:</label> <input type="text" name="uname" id="uname" required/>
+				</li>
+				<li>
+					<label for="pword">* Create a password:</label> <input type="text" name="pword" id="pword" required/>
+				</li>
+				<li>
+					<label for="pwordVer">* Type password again:</label> <input type="text" name="pwordVer" id="pwordVer" required/>
+				</li>
 				<li><p></p><p></p></li>
-				<input class="tfbutton" type="submit" value="Register" />
+				<input class="tfbutton" type="submit" value="Register">
 			</ul>
 			</form>
 		</div>

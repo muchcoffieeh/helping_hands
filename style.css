@@ -25,6 +25,11 @@ body {
 }
 #promiseBox a{display:block;}
 
+.overflowBox{
+	height: 100%;
+	width: 100%;
+}
+
 #newAcctBox{
 	border-radius: 0.5em;
 	background: rgba(0, 0, 0, 0.70);
@@ -39,6 +44,28 @@ body {
 	width: 50%;
 }
 
+/* TOP STUFF*/
+.topLinks{
+	z-index: 5;
+	position: fixed;
+	box-sizing:border-box;
+	width: 100%;
+	padding:1em;
+	top: 0;
+	background-color: #000;
+	height: 70px;
+	display: block;
+	font-size: 2rem;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000000;
+	font-size: 1rem;
+}
+
 #introBox{
 	margin-top: 3em;
 	padding: 2.5em 1.5em 2em 1.5em;
@@ -46,6 +73,26 @@ body {
 	height: 9%;
 	background-color: rgba(0,0,0, 0.5);
 }
+
+div.log{
+	font-family: Tahoma;
+	float: right;
+	margin-bottom: 2rem;
+	margin: 0 2rem 2rem 0;
+}
+
+header.inbox{
+	padding-left: 5%;
+	font-size: 2.5em;
+	font-family: Tahoma;
+	font-weight: bold;
+}
+
+ul.inbox-list{
+	overflow: scroll;
+}
+
+/* end top stuff */
 
 li hr{
 	width: 100%;
@@ -63,6 +110,84 @@ li hr{
 	padding: 2em;
 }
 
+header.reqHead{
+	padding-left: 5%;
+	font-size: 2.5em;
+	font-family: Tahoma;
+	font-weight: bold;
+}
+
+p.reqDateP{
+	margin:0;
+	padding: 0;
+}
+
+label.dateReqL{
+	display: inline;
+}
+
+/*request history contributor info */
+
+.progressBar{
+	width: 100%;
+	height: 2em;
+	background-color: #f5f5f5;
+	margin: 5% 0 5% 0;
+}
+
+.completeBar{
+	background-color: #B50000;
+	height: 100%;
+}
+
+nav.reqHisNav{
+	height: 3em;
+	float: center;
+}
+
+span.reqNav{
+	width: 10em;
+	height: 3em;
+}
+
+p.contAmt{
+	width: 8em;
+	float: right;
+	font-family: Tahoma;
+	font-size: 2em;
+	text-align: right;
+	margin: 0 1em 0 1em;
+}
+ a.contName{
+ 	color: #ABDFFF;
+ 	font-size: 2em;
+ 	font-family: Tahoma;
+ }
+
+ a.contName:hover{
+ 	text-decoration: underline;
+ }
+
+header.fulfilled{
+	font-size: 2.5em;
+	text-align: center;
+	font-family: Tahoma;
+	font-weight: bold;
+}
+
+header.contHead{
+ 	font-size: 2.5em;
+ 	text-align: center;
+ 	font-family: Tahoma;
+ 	font-weight: bold;
+ }
+
+ p.contDate{
+ 	margin: 0 0 1em 0;
+ }
+
+ /* end the request historu contributor info */
+
 .account li label{
 	text-align: left;
 	font-size: 1em;
@@ -77,13 +202,80 @@ input{
 	display: inline-block;
 	}
 
-li.inboxItem{
-	height: 10%;
-	position: relative;
-	padding-bottom: 10%;
-	display: block;
-	background-color: rgba(0, 0,0, 1.0);
+/* message system stuff */
+
+div.messageContainer{
+	font-family: Tahoma;
+	overflow-y:scroll;
 }
+
+li.inboxItem{
+	height: 3em;
+	position: relative;
+	padding-bottom: 5%;
+	padding-top: 1.5%;
+	display: block;
+	background-color: #fff;
+}
+
+label.orgNameOnMail{
+	text-align: left;
+	font-family: Tahoma;
+	font-size: 1.5em;
+}
+
+.orgNameOnMail a{
+	color: #000;
+}
+
+ol.inbox-list{
+	background-color: #fff;
+}
+
+.messageContent{
+	color: #000;
+	float: right;
+	width: 70%;
+	margin: 2% 4% 2% 4%;
+}
+
+div.messageDate{
+	float: right;
+	font-family: Tahoma;
+}
+
+a#mailPreview{
+	color: #000;
+	font-family: Tahoma;
+}
+
+a#mailPreview:hover{
+	text-decoration: underline;
+}
+
+div.photo{
+	float: left;
+	width: 5em;
+	height: 5em;
+	overflow: hidden;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+img.photo{
+	height: 90%;
+	display: block;
+	margin: 10%;
+}
+
+nav.inboxNav{
+	float: center;
+	margin: 0.5em 0 0.5em 2.1em;
+	font-family: Tahoma;
+	font-size: 1.5em;
+}
+
+/* end message system stuff */ 
 
 .profileImg{
 	margin-left: 1em;
@@ -103,15 +295,6 @@ div.donatePhoto{
 	height: 10em;
 }
 
-div.photo{
-	float: left;
-	width: 60px;
-	height: 60px;
-	overflow: hidden;
-	margin-left: 2%;
-	margin-right: 2%;
-}
-
 div.photo a{
 	float: left;
 	width: 60px;
@@ -120,39 +303,42 @@ div.photo a{
 	padding-left: 5%;
 }
 
-img.photo{
-	height: 90%;
-	display: block;
-	margin: 10%;
-}
-
-.messageContent{
-	color: #fff;
-	float: right;
-	width: 70%;
-	margin-right: 5%;
-}
-
 div.date{
 	float: right;
 }
 
-.searchContent span{
-	color: #fff;
+
+/* SEARCH STUFF */
+
+div.searchContent{
+	height: 5em;
+	margin: 0 2em 2em 0;
 }
 
-#howBox{
-	border-radius:1em;
-	color: #0877bd;
-	margin-top: 200px;
-	width: 20%;
-	height: 50%px;
-	background: rgba(255, 255, 255, 1.0);
-	margin: 5% auto 0 5%;
-	padding:1em;
-	box-sizing:border-box;
-	text-align:left;
-	line-height:1.5;
+a#searchReqPreview{
+	font-family: Tahoma;
+}
+
+label.searchOrgName{
+	text-align: left;
+	font-family: Tahoma;
+	font-size: 2em;
+}
+
+ul.searchResults{
+	padding: 0;
+}
+
+input.search{
+	height: 1.95em;
+	width: 25em;
+	}
+
+hr.style-six {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 	#tfheader{
@@ -160,7 +346,7 @@ div.date{
 	}
 	#tfnewsearch{
 		float:center;
-		padding:20px;
+		padding:2%;
 	}
 	.tftextinput{
 		margin: 0;
@@ -202,18 +388,26 @@ div.date{
 		clear:both;
 	}
 
+/* end search stuff */	
+
 	
 div header{
 	color: #fff;
 	font-size: 1.5rem;
 	}
 	
+/* REGISTRATION STUFF */
+
+ul.longSign li input{
+	width: 40%;
+}
+
 .socialSign{
 	float: left;
 	width: 35%;
 }
 
-.longSign{
+div.longSign{
 	float: right;
 	width: 60%;
 }
@@ -224,6 +418,8 @@ div header{
   float: left; 
   border: 1px inset; /* This is default border style for <hr> tag */
 }
+
+/* end REGISTRATION STUFF */
 
 label{
 	color:#fff;
@@ -247,27 +443,6 @@ li label{
 	margin: 0em 1em 0em 1em;
 	float: right;
 	align: center;
-}
-
-.topLinks{
-	z-index: 5;
-	position: fixed;
-	box-sizing:border-box;
-	width: 100%;
-	padding:1em;
-	top: 0;
-	background-color: #000;
-	height: 70px;
-	display: block;
-	font-size: 2rem;
-	-webkit-margin-before: 0em;
-	-webkit-margin-after: 0em;
-	-webkit-margin-start: 0px;
-	-webkit-margin-end: 0px;
-	font-weight: bold;
-	text-decoration: none;
-	color: #000000;
-	font-size: 1rem;
 }
 
 a{
@@ -309,30 +484,8 @@ button, .button{
 	float: right;
 }
 
-input{
-	width: 50%;
-	}
 
-/*
-.textbox {  
-    height:10%; 
-    width: 30%; 
-	border: solid 1px #9e9e9e; 
-	outline: 0; 
-	font: normal 13px/100% Verdana, Tahoma, sans-serif; 
-	background: #FFFFFF url('bg_form.png') left top repeat-x; 
-	background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF)); 
-	background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px); 
-	box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
-	-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
-	-webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
-	} 
- 
-.textbox :focus {  
-	border-color: #797979;  
-	-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px; 
-	} 
-*/
+
 	
 hr{
 	margin-top: 2em;
@@ -353,10 +506,6 @@ footer{
     width: 100%;
     height: 35px;
 	background: #000;
-}
-
-div.searchContent{
-	height: 5em;
 }
 
 div p {
@@ -405,6 +554,7 @@ li, nav
 
         #menu ul
         {
+        	padding: 0;
             list-style-type:none;
         }
 

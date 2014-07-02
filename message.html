@@ -11,103 +11,117 @@
 			<a href="new1.html">MESSAGES</a>
 	</div>
 	
-	<div style="padding-top: 7%; width: 100%; height: 9%; background-color: rgba(0,0,0, 0.5);">
+	<div id="introBox">
 			<div style="float: left; width: 20%; margin-bottom: 2rem">
 			<img style="width: 70%;" src="helpLogo.png">
 			</div>
 			
-			<div style="float: right; width: 10%; margin-bottom: 2rem">
-			<a href="newUser.html">SIGN UP</a>
-			<a href="signIn.html">LOG IN</a>		
+			<div class="log" style="float: right; margin-bottom: 2rem">
+				<a href="contAccount.html">Serena Xu</a>
+				<a action="logOut">Log Out</a>	
 			</div>
 	</div>
 	
+	<div class="contents" style="height: 100%; width: 100%; margin-bottom: 30%">
+	<div id="box" style="margin: 5% auto 0 auto; width: 50%; padding: 2%; margin-bottom: 10%;">
+		<header class="inbox">Messages</header>
 
-	<div id="box" style="height: 5%; padding: 0.2rem;">
-			<p style="font-size: 1.5rem; color: #fff;">Inbox</p>
-	</div>
-	
-	<div id="box">
-		<ul class="inbox-list">
+		<nav class="inboxNav" style="float:center; margin: 0.5em 0 0.5em 2.4em">
+			<span>
+				<a class="inboxType" action="">Inbox</a>
+			</span>
+			<span>
+				<a class="inboxType" action="">Sent</a>
+			</span>
+			<span>
+				<a class="inboxType" action="">Drafts</a>
+			</span>
+			<span>
+				<a class="inboxType" action="">Trash</a>
+			</span>
+		</nav>
+
+		<ol class="inbox-list">
 			<li class="inboxItem">
 				<div class="inboxm">
 					<div class="photo">
-						<img alt="messagie name" class="photo" src="profile.jpg">
+						<img alt="messagie name" class="photo" src="images/salvationArmy.jpg">
 					</div>
 					<div class="messageContent">
-						<div class="date">
+						<div class="messageDate">
 							<span>6/16/14</span>
 						</div>
-						<span>
-							Org name
-						</span>
+						<label class="orgNameOnMail">
+							<a href="orgAccountPublic.html"> Salvation Army</a>
+						</label>
 						<p></p>
-						<a id="mail1" href="mail1.html">
+						<a id="mailPreview" href="mail1.html">
+							this is the start of the message and it goes on......
+						</a>
+					</div>
+				</div>
+			</li>
+			<li class="inboxItem">
+				<div class="inboxm">
+					<div class="photo">
+						<img alt="messagie name" class="photo" src="images/salvationArmy.jpg">
+					</div>
+					<div class="messageContent">
+						<div class="messageDate">
+							<span>6/16/14</span>
+						</div>
+						<label class="orgNameOnMail">
+							<a href="orgAccountPublic.html"> Salvation Army</a>
+						</label>
+						<p></p>
+						<a id="mailPreview" href="mail1.html">
 							this is the start of the message
 						</a>
 					</div>
 				</div>
 			</li>
 			<li class="inboxItem">
-				<div class="inboxI">
+				<div class="inboxm">
 					<div class="photo">
-						<a href="org.html"><img href="org.html" alt="messagie name" class="photo" src="profile.jpg"></a>
+						<img alt="messagie name" class="photo" src="images/salvationArmy.jpg">
 					</div>
 					<div class="messageContent">
-						<div class="date">
+						<div class="messageDate">
 							<span>6/16/14</span>
 						</div>
-						<span>
-							Org name
-						</span>
+						<label class="orgNameOnMail">
+							<a href="orgAccountPublic.html"> Salvation Army</a>
+						</label>
 						<p></p>
-						<a id="mail1" href="mail1.html">
+						<a id="mailPreview" href="mail1.html">
 							this is the start of the message
 						</a>
 					</div>
 				</div>
 			</li>
 			<li class="inboxItem">
-				<div class="inboxI">
+				<div class="inboxm">
 					<div class="photo">
-						<a href="org.html"><img alt="messagie name" class="photo" src="profile.jpg"></a>
+						<img alt="messagie name" class="photo" src="images/salvationArmy.jpg">
 					</div>
 					<div class="messageContent">
-						<div class="date">
+						<div class="messageDate">
 							<span>6/16/14</span>
 						</div>
-						<span>
-							<a href="org.html">Org name</a>
-						</span>
+						<label class="orgNameOnMail">
+							<a href="orgAccountPublic.html"> Salvation Army</a>
+						</label>
 						<p></p>
-						<a id="mail1" href="mail1.html">
-							this is the start of the message
-						</a>
-					</div>
-				</div>
-			</li>
-			<li class="inboxItem">
-				<div class="inboxI">
-					<div class="photo">
-						<a href="org.html"><img href="org.html" alt="messagie name" class="photo" src="profile.jpg"></a>
-					</div>
-					<div class="messageContent">
-						<div class="date">
-							<span>6/16/14</span>
-						</div>
-						<span>
-							<a href="org.html">Org name</a>
-						</span>
-						<p></p>
-						<a id="mail1" href="mail1.html">
+						<a id="mailPreview" href="mail1.html">
 							this is the start of the message
 						</a>
 					</div>
 				</div>
 			</li>
 			
-		</ul>
+		</ol>
 		
+	</div>
 	</div>
 
 <footer>
