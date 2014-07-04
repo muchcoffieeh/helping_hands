@@ -33,13 +33,14 @@
 
 			<ul class="longSign">
 				<li>
-					<label for="name">* Name:</label> <input placeholder="First Last" type="text" name="name" id="name" required />
+					<label for="name">* Name:</label> <input type="text" placeholder="First Last" name="name" id="name" />
+					<p style="margin:0; text-align: center;" id="nameInfo"></p>
 				</li>
 				<li>
 					<label for="city">City:</label> <input type="text" name="city" id="city"/>
 				</li>
 				<li>
-					<label for="phone">Phone Number:</label> <input type="tel" id="phone" id="phone"/><p style="margin:0; text-align: center;" id="phoneInfo"></p>
+					<label for="phone">* Phone Number:</label> <input type="tel" id="phone" id="phone" /><p style="margin:0; text-align: center;" id="phoneInfo"></p>
 				</li>
 				<li>
 					<label for="email">* E-mail:</label> <input type="email" name="email" id="email"/>
@@ -50,10 +51,10 @@
 					<label for="uname">* Create a Username:</label> <input type="text" name="uname" id="uname" required/>
 				</li>
 				<li>
-					<label for="pword">* Create a password:</label> <input type="text" name="pword" id="pword" required/>
+					<label for="pword">* Create a password:</label> <input type="text" name="pword" id="pword"/><p style="margin:0; text-align: center;" id="pwordInfo"></p>
 				</li>
 				<li>
-					<label for="pwordVer">* Type password again:</label> <input type="text" name="pwordVer" id="pwordVer" required/>
+					<label for="pwordVer">* Type password again:</label> <input type="text" name="pwordVer" id="pwordVer" /><p style="margin:0; text-align: center;" id="pwordVerInfo"></p>
 				</li>
 				<li><p></p><p></p></li>
 				<input class="tfbutton" type="submit" value="Register">
