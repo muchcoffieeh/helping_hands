@@ -3,12 +3,13 @@
 <head>
 	<title>INBOX</title>
 	<link type="text/css" rel="stylesheet" href="style.css"/>
+
 </head>
 <body>
 	<div class="topLinks">
 			<a href="index.html">HOME</a>
-			<a href="contAccount.html">ACCOUNT</a>
-			<a href="message.html">MESSAGES</a>
+			<a href="orgAccount.html">ACCOUNT</a>
+			<a href="messageOrg.html">MESSAGES</a>
 	</div>
 
 	<div id="introBox">
@@ -17,7 +18,7 @@
 			</div>
 
 			<div class="log" style="float: right; margin-bottom: 2rem">
-				<a href="contAccount.html">Serena Xu</a>
+				<a href="orgAccount.html">Salvation Army</a>
 				<a action="logOut">Log Out</a>
 			</div>
 	</div>
@@ -27,13 +28,13 @@
 		<header class="inbox">Messages</header>
 
 		<nav class="inboxNav" style="float:center; margin: 0.5em 0 0.5em 2.4em">
-			<span class="tab" id="tabSelected" onclick="location.href='message.html';">
+			<span class="tab" id="tabSelected" onclick="location.href='messageOrg.html';">
 				<a class="tabSelected">Inbox (4)</a>
 			</span>
-			<span class="tab" onclick="location.href='messageSent.html';">
-				<a action="messageSent.html">Sent</a>
+			<span class="tab" onclick="location.href='messageOrg_sent.html';">
+				<a action="messageOrg_sent.html">Sent</a>
 			</span>
-			<span class="tab" onclick="location.href='messageTrash.html';">
+			<span class="tab" onclick="location.href='messageOrg_trash.html';">
 				<a class="clickable" action="">Trash</a>
 			</span>
 		</nav>
@@ -41,15 +42,13 @@
 		<ol class="inbox-list">
 			<li class="inboxItem">
 				<div class="inboxm">
-					<div class="photo">
-						<img alt="messagie name" class="photo" src="images/salvationArmy.jpg">
-					</div>
-					<div class="messageContent">
+					<div class="messageOrgContent">
 						<div class="messageDate">
-							<span>6/16/14</span>
+							<p>6/16/14</p>
+							<p>Donating 20</p>
 						</div>
 						<label class="orgNameOnMail">
-							<a href="orgAccountPublic.html"> Salvation Army</a>
+							John Lomack
 						</label>
 						<p></p>
 						<a id="mailPreview" href="mail1.html">
@@ -60,57 +59,51 @@
 			</li>
 			<li class="inboxItem">
 				<div class="inboxm">
-					<div class="photo">
-						<img alt="messagie name" class="photo" src="images/red-cross.jpg">
-					</div>
-					<div class="messageContent">
+					<div class="messageOrgContent">
 						<div class="messageDate">
-							<span>5/26/14</span>
+							<p>4/06/14</p>
+							<p>Donating 20</p>
 						</div>
 						<label class="orgNameOnMail">
-							<a href="orgAccountPublic.html"> Salvation Army</a>
+							Cissy Jacob
 						</label>
 						<p></p>
 						<a id="mailPreview" href="mail1.html">
-							100 Cans of Food
+							40 Paint Buckets
 						</a>
 					</div>
 				</div>
 			</li>
 			<li class="inboxItem">
 				<div class="inboxm">
-					<div class="photo">
-						<img alt="messagie name" class="photo" src="images/enn.jpg">
-					</div>
-					<div class="messageContent">
+					<div class="messageOrgContent">
 						<div class="messageDate">
-							<span>6/16/14</span>
+							<p>3/06/14</p>
+							<p>Donating 40</p>
 						</div>
 						<label class="orgNameOnMail">
-							<a href="orgAccountPublic.html"> Salvation Army</a>
+							Jennister
 						</label>
 						<p></p>
 						<a id="mailPreview" href="mail1.html">
-							this is the start of the message
+							100 Hot Meals
 						</a>
 					</div>
 				</div>
 			</li>
 			<li class="inboxItem">
 				<div class="inboxm">
-					<div class="photo">
-						<img alt="messagie name" class="photo" src="images/salvationArmy.jpg">
-					</div>
-					<div class="messageContent">
+					<div class="messageOrgContent">
 						<div class="messageDate">
-							<span>6/16/14</span>
+							<p>3/06/14</p>
+							<p>Donating 40</p>
 						</div>
 						<label class="orgNameOnMail">
-							<a href="orgAccountPublic.html"> Salvation Army</a>
+							LovelyHelper
 						</label>
 						<p></p>
 						<a id="mailPreview" href="mail1.html">
-							this is the start of the message
+							100 Winter Coats
 						</a>
 					</div>
 				</div>

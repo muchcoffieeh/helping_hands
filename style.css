@@ -1,5 +1,5 @@
-html { 
-  background: url(images/helping-hand.jpg) no-repeat center center fixed; 
+html {
+  background: url(images/helping-hand.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -183,6 +183,16 @@ header.contHead{
 
  /* end the request history contributor info */
 
+ /*NEW REQUEST*/
+.newRequest li label{
+  width: 40%;
+}
+
+/* A REQUEST */
+.aRequest li{
+  color: #fff;
+}
+
  /* REQUEST HISTORY CONT info */
 img.followReqPic{
 	height: 10em;
@@ -203,7 +213,7 @@ input{
 	display: inline-block;
 	}
 
-/* message system stuff */
+/* MESSAGE system stuff */
 
 div.messageContainer{
 	overflow-y:scroll;
@@ -222,11 +232,13 @@ label.orgNameOnMail{
 	text-align: left;
 	font-family: Tahoma;
 	font-size: 1.5em;
+  color: #000;
 }
 
 .orgNameOnMail a{
 	color: #000;
 }
+
 
 ol.inbox-list{
 	background-color: #fff;
@@ -239,12 +251,33 @@ ol.inbox-list{
 	margin: 2% 4% 2% 4%;
 }
 
+.messageOrgContent{
+  color: #000;
+  float: center;
+  width: 80%;
+  margin: 2% 4% 2% 4%;
+}
+
 div.messageDate{
 	float: right;
 }
 
+.messageDate p{
+  color: #000;
+}
+
 a#mailPreview{
 	color: #000;
+}
+
+#tabSelected{
+  color: #000;
+  background-color: #fff;
+  border-radius: 0.2em;
+}
+
+a.tabSelected{
+  color: #000;
 }
 
 a#mailPreview:hover{
@@ -260,6 +293,13 @@ div.photo{
 	margin-right: 2%;
 }
 
+span.tab{
+  width: 3em;
+  cursor: pointer;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
 img.photo{
 	height: 90%;
 	display: block;
@@ -272,7 +312,7 @@ nav.inboxNav{
 	font-size: 1.5em;
 }
 
-/* end message system stuff */ 
+/* end message system stuff */
 
 .profileImg{
 	margin-left: 1em;
@@ -383,15 +423,23 @@ hr.style-six {
 		clear:both;
 	}
 
-/* end search stuff */	
+  .searchDate{
+    text-align: right;
+  }
 
-	
+/* end search stuff */
+
+
 div header{
 	color: #fff;
 	font-size: 1.5rem;
 	}
-	
+
 /* REGISTRATION STUFF */
+
+ul.longSign li label{
+  width: 40%;
+}
 
 ul.longSign li input{
 	width: 40%;
@@ -410,7 +458,7 @@ div.longSign{
 .vertLine{
   width: 0px; /* Use only border style */
   height: 100%;
-  float: left; 
+  float: left;
   border: 1px inset; /* This is default border style for <hr> tag */
 }
 
@@ -419,7 +467,7 @@ div.longSign{
 label{
 	color:#fff;
 	text-align:right;
-	width: 40%;
+	width: 60%;
 	font-size: 1.5em;
 }
 
@@ -459,7 +507,7 @@ a:hover{
 	float: right;
 	align: center;
 }
- 
+
 button, .button{
 	background-color: #408c99;
 	border-radius: 5px;
@@ -481,7 +529,7 @@ button, .button{
 
 
 
-	
+
 hr{
 	margin-top: 2em;
 	margin-bottom: 2em;
@@ -550,7 +598,7 @@ li, nav
         	background: -webkit-linear-gradient(#405461, #405461, #232E36); /* For Safari 5.1 to 6.0 */
   			background: -o-linear-gradient(#405461, #405461, #232E36); /* For Opera 11.1 to 12.0 */
   			background: -moz-linear-gradient(#405461, #405461, #232E36); /* For Firefox 3.6 to 15 */
-  			background: linear-gradient(#405461, #405461, #232E36); 
+  			background: linear-gradient(#405461, #405461, #232E36);
         }
 
 
@@ -578,7 +626,7 @@ li, nav
 
             }
 
-			
+
 
             #menu ul li > ul {
                 position: absolute;

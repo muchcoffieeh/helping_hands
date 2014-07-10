@@ -7,7 +7,7 @@
 <body>
 	<div class="topLinks">
 			<a href="index.html">HOME</a>
-			<a href="profile.html">ACCOUNT</a>
+			<a href="orgAccount.html">ACCOUNT</a>
 			<a href="message.html">MESSAGES</a>
 	</div>
 
@@ -17,26 +17,28 @@
 			</div>
 
 			<div class="log" style="float: right; margin: 0 2rem 2rem 0">
-			<a href="contAccount.html" id="orgName">Serena Xu</a>
+			<a href="contAccount.html" id="orgName">Salvation Army</a>
 			<a action="logOut">Log Out</a>
 			</div>
 	</div>
 
 	<div class="overflowBox" style="margin: 5% auto 5% auto; width: 80%;">
 		<div id="box" style="float: left; width: 40%;">
-			<header class="reqHead" style="margin: 2% auto 5% auto; text-align: center;">Serena Xu</header>
+			<header class="reqHead" style="margin: 2% auto 5% auto; text-align: center;">Salvation Army</header>
+			<div class="profileImg">
+			<img src="images/salvationArmy.jpg" height="100%">
+			</div>
 
 			<ul class="account">
-				<li><hr></li>
-
 				<li>
 					<div style="width: 35%; float: left; height: 80%;">
-						<label for="name">Name:</label>
+						<label for="name">Description:</label>
 					</div>
 
 					<div style="width: 65%; float: right; height: 80%;">
-					<p class="orgDes">Serena Xu</p>
+					<p class="orgDes">The Salvation Army, an international movement, is an evangelical part of the universal Christian church. Its message is based on the Bible. Its ministry is motivated by the love of God. Its mission is to preach the gospel of Jesus Christ and to meet human needs in His name without discrimination.</p>
 					</div>
+
 				</li>
 
 				<li><hr></li>
@@ -47,7 +49,7 @@
 					</div>
 
 					<div style="width: 65%; float: right; height: 80%;">
-					<p class="orgDes">San Francisco</p>
+					<p class="orgDes">San Francisco, CA.</p>
 					</div>
 				</li>
 
@@ -71,7 +73,19 @@
 					</div>
 
 					<div style="width: 65%; float: right; height: 80%;">
-					<p class="orgDes">something@gmail.com</p>
+					<p class="orgDes">info@salvationarmy.org</p>
+					</div>
+				</li>
+
+				<li><hr></li>
+
+				<li>
+					<div style="width: 35%; float: left; height: 80%;">
+						<label for="name">Website:</label>
+					</div>
+
+					<div style="width: 65%; float: right; height: 80%;">
+					<p class="orgDes">www.salvationarmy.org</p>
 					</div>
 				</li>
 
@@ -79,69 +93,34 @@
 
 			</ul>
 
-			<button class="tfbutton" onclick="window.location.href='contAccountEdit.html'" href="contAccountEdit.html">Edit Profile</button>
+			<button class="tfbutton" onclick="window.location.href='orgAccountStartEdit.html'" href="orgAccountStartEdit.html">Edit Profile</button>
 
 		</div>
 
 		<div class="reqAcctBox">
 			<div id="box" style="height: 15em; margin-bottom: 3%;">
+				<div>
+					<button class="tfbutton" onclick="window.location.href='newRequest.html'" href="newRequest.html">Make New Request</button>
+				</div>
 
-				<header class="reqHead" style="margin: 2% auto 2% auto; text-align: center;">Active Donations</header>
+				<header class="reqHead" style="margin: 2% auto 2% auto; text-align: center;">Active Requests</header>
 
 				<div style="height: 85%; overflow-y: scroll">
-					<nav id="menu">
-						<ul class="parent-menu">
-						<li>
-							<a href="#">
-								<div style="float: left;">100 White Shirts</div>
-								<div style="float: right;">6/20/14</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div style="float: left;">500 Cans of dog food</div>
-								<div style="float: right;">6/16/14</div>
-							</a>
-						</li>
-						</ul>
-					</nav>
+					<p>No requests yet. Please make a new one or browse the postings from other organizations.</p>
+					<button class="tfbutton" onclick="window.location.href='searchResultsAsOrg.html'" href="searchResultsAsOrg.html">Browse</button>
 				</div>
 
 			</div>
-			<div id="box" style=" height: 20em; ">
-				<header class="reqHead" style="margin: 2% auto 2% auto; text-align: center;">Donation History</header>
+			<div id="box" style=" height: 10em; ">
+				<header class="reqHead" style="margin: 2% auto 2% auto; text-align: center;">Request History</header>
 
-				<div style="height: 85%; overflow-y: scroll">
-					<nav id="menu">
-						<ul class="parent-menu">
-						<li>
-							<a href="#">
-								<div style="float: left;">5 Laserjet Printers</div>
-								<div style="float: right;">6/13/14</div>
-							</a>
-						</li>
-						<li>
-							<a href="historyRequestCont.html">
-								<div style="float: left;">50 Bottles of Water</div>
-								<div style="float: right;">5/10/14</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div style="float: left;">30 Car Rides</div>
-								<div style="float: right;">5/1/14</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div style="float: left;">50 Name plates</div>
-								<div style="float: right;">4/1/14</div>
-							</a>
-						</li>
-						</ul>
+				<div style=" overflow-y: scroll">
+					<p>This is where you will have record of your previous requests.</p>
 					</nav>
 				</div>
 			</div>
+		</div>
+
 		</div>
 
 	</div>

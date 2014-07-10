@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>INBOX</title>
+	<link type="text/css" rel="stylesheet" href="style.css"/>
+</head>
+<body>
+	<div class="topLinks">
+			<a href="index.html">HOME</a>
+			<a href="contAccount.html">ACCOUNT</a>
+			<a href="message.html">MESSAGES</a>
+	</div>
+
+	<div id="introBox">
+			<div style="float: left; width: 20%; margin-bottom: 2rem">
+			<img style="width: 70%;" src="helpLogo.png">
+			</div>
+
+			<div class="log" style="float: right; margin-bottom: 2rem">
+				<a href="orgAccount.html">Serena Xu</a>
+				<a action="logOut">Log Out</a>
+			</div>
+	</div>
+
+	<div class="contents" style="height: 100%; width: 100%; margin-bottom: 30%">
+	<div id="box" style="margin: 5% auto 0 auto; width: 50%; padding: 2%; margin-bottom: 10%;">
+		<header class="inbox">Messages</header>
+
+		<nav class="inboxNav" style="float:center; margin: 0.5em 0 0.5em 2.4em">
+			<span class="tab" onclick="location.href='message.html';">
+				<a >Inbox (4)</a>
+			</span>
+			<span class="tab" id="tabSelected" onclick="location.href='messageSent.html';">
+				<a class="tabSelected" action="message_sent.html">Sent</a>
+			</span>
+			<span class="tab" onclick="location.href='messageTrash.html';">
+				<a class="clickable" action="">Trash</a>
+			</span>
+		</nav>
+
+		<ol class="inbox-list">
+			<li class="inboxItem">
+				<div class="inboxm">
+					<div class="messageOrgContent">
+						<p style="color: #000;">0 messages in this folder</p>
+					</div>
+				</div>
+			</li>
+
+		</ol>
+
+	</div>
+	</div>
+
+<footer>
+	<nav class="bottomLinks">
+			<a href="index.html">About Us</a>
+			<a href="profile.html">Community</a>
+			<a href="new1.html">Education</a>
+			<a >(c) HelpingHands, 2014</a>
+	</nav>
+</footer>
+
+</body>
+</html>

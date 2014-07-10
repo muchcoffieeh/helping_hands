@@ -7,8 +7,8 @@
 <body>
 	<div class="topLinks">
 			<a href="index.html">HOME</a>
-			<a href="profile.html">ACCOUNT</a>
-			<a href="new1.html">MESSAGES</a>
+			<a href="orgAccount.html">ACCOUNT</a>
+			<a href="message.html">MESSAGES</a>
 	</div>
 
 	<div id="introBox">
@@ -22,9 +22,9 @@
 			</div>
 	</div>
 
-	<div id="contentBox" style="margin: 5% auto 5% auto; width: 80%; height: 100%;">
+	<div id="contentBox" style="margin: 5% auto 5% auto; height: 100%; width: 80%; ">
 		<div id="box" style="float: left; width: 40%;">
-			<header class="reqHead" style="margin: 2% auto 5% auto; text-align: center;">Salvation Army</header>
+			<header class="orgName">Organization Name</header>
 			<div id="imgOptions">
 				<div class="profileImg">
 				<img src="images/salvationArmy.jpg" height="100%">
@@ -38,7 +38,8 @@
 			<ul>
 				<li><label for="name">Description:</label>
 					<form method="post" action=""  style="padding-right: 12%; float: right;">
-						<textarea class="desRequest" rows="10" cols="50" placeholder="The Salvation Army, an international movement, is an evangelical part of the universal Christian church. Its message is based on the Bible. Its ministry is motivated by the love of God. Its mission is to preach the gospel of Jesus Christ and to meet human needs in His name without discrimination."></textarea><br />
+						<textarea placeholder="Please provide a description of your organization" id="orgDescription" cols="35" rows="10">
+						</textarea></br>
 					</form>
 				</li>
 
@@ -57,7 +58,7 @@
 				<li><hr></li>
 
 				<li>
-					<label for="l133578-133578">Email:</label> <input placeholder="info@salvationarmy.org" type="email" name="cm-133578-133578" id="email"  required />
+					<label for="">Email:</label> <input placeholder="info@salvationarmy.org" type="email" name="cm-133578-133578" id="email"  required />
 				</li>
 
 				<li><hr></li>
@@ -75,7 +76,7 @@
 			</ul>
 			</div>
 			<p></p>
-			<button class="tfbutton" onclick="window.location.href='orgAccount.html'" href="postings.html">Save Changes</button>
+			<button class="tfbutton" onclick="window.location.href='orgAccountStart.html'" href="postings.html">Save Changes</button>
 
 		</div>
 
@@ -88,56 +89,16 @@
 				<header class="reqHead" style="margin: 2% auto 2% auto; text-align: center;">Active Requests</header>
 
 				<div style="height: 85%; overflow-y: scroll">
-					<nav id="menu">
-						<ul class="parent-menu">
-						<li>
-							<a href="#">
-								<div style="float: left;">50 Bottles of Water</div>
-								<div style="float: right;">6/20/14</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div style="float: left;">40 Paint Buckets</div>
-								<div style="float: right;">6/16/14</div>
-							</a>
-						</li>
-						</ul>
-					</nav>
+					<p>No requests yet. Please make a new one or browse the postings from other organizations.</p>
+					<button class="tfbutton" onclick="window.location.href='searchResultsAsOrg.html'" href="searchResultsAsOrg.html">Browse</button>
 				</div>
 
 			</div>
-			<div id="box" style=" height: 20em; ">
+			<div id="box" style=" height: 10em; ">
 				<header class="reqHead" style="margin: 2% auto 2% auto; text-align: center;">Request History</header>
 
-				<div style="height: 85%; overflow-y: scroll">
-					<nav id="menu">
-						<ul class="parent-menu">
-						<li>
-							<a href="#">
-								<div style="float: left;">100 Winter Coats</div>
-								<div style="float: right;">6/13/14</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div style="float: left;">20 White Shirts</div>
-								<div style="float: right;">5/10/14</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div style="float: left;">100 Hot Meals</div>
-								<div style="float: right;">5/1/14</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div style="float: left;">100 Bottles of Water</div>
-								<div style="float: right;">4/1/14</div>
-							</a>
-						</li>
-						</ul>
+				<div style=" overflow-y: scroll">
+					<p>This is where you will have record of your previous requests.</p>
 					</nav>
 				</div>
 			</div>

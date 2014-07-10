@@ -7,8 +7,8 @@
 <body>
 	<div class="topLinks">
 			<a href="index.html">HOME</a>
-			<a href="contAccount.html">ACCOUNT</a>
-			<a href="message.html">MESSAGES</a>
+			<a href="orgAccount.html">ACCOUNT</a>
+			<a href="messageOrg.html">MESSAGES</a>
 	</div>
 
 	<div id="introBox">
@@ -17,7 +17,7 @@
 			</div>
 
 			<div class="log" style="float: right; margin-bottom: 2rem">
-				<a href="contAccount.html">Serena Xu</a>
+				<a href="orgAccount.html">Salvation Army</a>
 				<a action="logOut">Log Out</a>
 			</div>
 	</div>
@@ -35,41 +35,18 @@
 
 		<div style="float: right; height: 2em; width: 8em;">
 			<select onchange="location = this.options[this.selectedIndex].value;" class="tfbutton" style="width: 100%; height: 100%;">
-				<option value="searchResults.html">Sort By</option>
-  				<option value="searchResults.html">Date</option>
-  				<option value="searchResults_org.html">Organization</option>
-  				<option value="searchResults_need.html">Needs</option>
-  				<option value="searchResults_loc.html">Location</option>
+				<option value="searchResultsAsOrg.html">Sort By</option>
+  				<option value="searchResultsAsOrg.html">Date</option>
+  				<option value="searchResultsAsOrg_org.html">Organization</option>
+  				<option value="searchResultsAsOrg_need.html">Needs</option>
+  				<option value="searchResultsAsOrg_loc.html">Location</option>
 			</select>
 	</div>
 	</nav>
 
 			<div class="tfclear"></div>
 
-		<ul class="searchResults">
-			<li class="searchItem">
-				<div class="searchPost">
-					<div class="photo">
-						<img alt="OrganizationName" class="photo" src="images/salvationArmy.jpg">
-					</div>
-					<div class="searchContent">
-						<label class="searchOrgName">
-							<a href="orgAccountPublic.html">Salvation Army</a>
-						</label>
-						<div class="date">
-							<p class="searchDate">6/16/14</p>
-							<p>San Francisco, CA</p>
-						</div>
-						<p></p>
-						<a id="searchReqPreview" href="requestPublic.html">
-							100 Bottles of Water
-						</a>
-					</div>
-				</div>
-			</li>
-
-			<li><hr class="style-six"></hr></li>
-
+			<ul class="searchResults">
 			<li class="searchItem">
 				<div class="searchPost">
 					<div class="photo">
@@ -96,19 +73,19 @@
 			<li class="searchItem">
 				<div class="searchPost">
 					<div class="photo">
-						<img alt="OrganizationName" class="photo" src="images/red-cross.jpg">
+						<img alt="OrganizationName" class="photo" src="images/friendsOfAnimals.jpg">
 					</div>
 					<div class="searchContent">
 						<label class="searchOrgName">
-							American Red Cross
+							Friends of Animals
 						</label>
 						<div class="date">
-							<p class="searchDate">5/10/14</p>
-							<p>New York, NY</p>
+							<p class="searchDate">1/14/14</p>
+							<p>Centennial, CO</p>
 						</div>
 						<p></p>
 						<a id="searchReqPreview" href="request1.html">
-							100 Winter coats
+							20 Flea medicine
 						</a>
 					</div>
 				</div>
@@ -142,19 +119,42 @@
 			<li class="searchItem">
 				<div class="searchPost">
 					<div class="photo">
-						<img alt="OrganizationName" class="photo" src="images/friendsOfAnimals.jpg">
+						<img alt="OrganizationName" class="photo" src="images/red-cross.jpg">
 					</div>
 					<div class="searchContent">
 						<label class="searchOrgName">
-							Friends of Animals
+							American Red Cross
 						</label>
 						<div class="date">
-							<p class="searchDate">1/14/14</p>
-							<p>Centennial, CO</p>
+							<p class="searchDate">5/10/14</p>
+							<p>New York, NY</p>
 						</div>
 						<p></p>
 						<a id="searchReqPreview" href="request1.html">
-							20 Flea medicine
+							100 Winter coats
+						</a>
+					</div>
+				</div>
+			</li>
+
+			<li><hr class="style-six"></hr></li>
+
+			<li class="searchItem">
+				<div class="searchPost">
+					<div class="photo">
+						<img alt="OrganizationName" class="photo" src="images/salvationArmy.jpg">
+					</div>
+					<div class="searchContent">
+						<label class="searchOrgName">
+							<a href="orgAccountPublic.html">Salvation Army</a>
+						</label>
+						<div class="date">
+							<p class="searchDate">6/16/14</p>
+							<p>San Francisco, CA</p>
+						</div>
+						<p></p>
+						<a id="searchReqPreview" href="requestPublicOrg.html">
+							100 Bottles of Water
 						</a>
 					</div>
 				</div>

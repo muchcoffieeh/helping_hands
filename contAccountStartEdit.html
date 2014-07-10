@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Edit Account</title>
+	<link type="text/css" rel="stylesheet" href="style.css"/>
+</head>
+<body>
+	<div class="topLinks">
+			<a href="index.html">HOME</a>
+			<a href="profile.html">ACCOUNT</a>
+			<a href="new1.html">MESSAGES</a>
+	</div>
+
+	<div id="introBox">
+			<div style="float: left; width: 20%; margin-bottom: 2rem">
+			<img style="width: 70%;" src="helpLogo.png">
+			</div>
+
+			<div style="float: right; margin: 0 2rem 2rem 0">
+			<a href="contAccount.html" id="orgName">Serena Xu</a>
+			<a action="logOut">Log Out</a>
+			</div>
+	</div>
+
+	<div id="contentBox" style="margin: 5% auto 5% auto; width: 80%; ">
+		<div id="box" style="float: left; width: 40%;">
+			<header class="orgName">Serena Xu</header>
+
+			<div>
+			<ul>
+
+				<li><hr></li>
+
+				<li>
+					<label for="name">Name:</label> <input placeholder="Serena Xu" type="text" name="name" id="name" required />
+				</li>
+
+				<li><hr></li>
+
+				<li>
+					<label for="name">Location:</label> <input placeholder="San Francisco" type="text" name="location" id="location"/>
+				</li>
+
+				<li><hr></li>
+
+				<li>
+					<label for="phone">Phone Number:</label> <input placeholder="646-244-7521" type="tel" name="phone" id="phone" required />
+				</li>
+
+				<li><hr></li>
+
+				<li>
+					<label for="email">Email:</label> <input placeholder="serena.s.xu@gmail.com" type="email" name="email" id="email"  required />
+				</li>
+
+			</ul>
+			</div>
+			<p></p>
+			<button class="tfbutton" onclick="window.location.href='contAccountStart.html'" href="postings.html">Save Changes</button>
+
+		</div>
+
+		<div class="reqAcctBox">
+			<div id="box" style="height: 10em; margin-bottom: 3%;">
+
+				<header class="reqHead" style="margin: 2% auto 2% auto; text-align: center;">Active Donations</header>
+
+				<div style="height: 85%; overflow-y: scroll">
+					<p>No donations yet. Please browse the postings.</p>
+					<button class="tfbutton" onclick="window.location.href='searchResults.html'" href="searchResults.html">Browse</button>
+				</div>
+
+			</div>
+			<div id="box" style=" height: 10em; ">
+				<header class="reqHead" style="margin: 2% auto 2% auto; text-align: center;">Donation History</header>
+
+				<div style=" overflow-y: scroll">
+					<p>This is where you will have record of your donations.</p>
+					</nav>
+				</div>
+			</div>
+		</div>
+		</div>
+
+	</div>
+
+<footer>
+	<nav class="bottomLinks">
+			<a href="index.html">About Us</a>
+			<a href="profile.html">Community</a>
+			<a href="new1.html">Education</a>
+			<a >(c) HelpingHands, 2014</a>
+	</nav>
+</footer>
+
+</body>
+</html>
