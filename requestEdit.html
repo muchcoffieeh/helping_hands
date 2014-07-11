@@ -52,7 +52,7 @@
 
 				<li>
 					<div style="width: 35%; float: left; height: 80%;">
-						<label for="name">Location:</label>
+						<label for="name">Delivery Address:</label>
 					</div>
 
 					<div style="width: 65%; float: right; height: 80%;">
@@ -102,12 +102,11 @@
 
 				<li>
 					<div style="width: 35%; float: left; height: 80%;">
-						<label for="name">Donors need to transport:</label>
+						<label for="name">Expiration Date:</label>
 					</div>
 
 					<div style="width: 65%; float: right; height: 80%;">
-					<input style="width: 3em;" type="radio" name="q1" value="y"><label style="width: 1em;">Yes</label>
-					<input style="color: #000; width: 3em;" type="radio" name="q1" value="n"><label style="width: 1em;">No</label>
+					<input placeholder="8/20/14" type="date" name="name" id="need" required />
 					</div>
 				</li>
 
@@ -131,13 +130,14 @@
 		</div>
 
 		<div style="margin-top: 8%;">
-			<ul <ul class="aRequest">
-				<li><label for="name">What are you donating?</label> <input type="text" name="name" id="name" required />
-				</li>
+			<ul class="aRequest">
+
 				<li><label for="name">How much are you donating?</label> <input type="number" name="name" id="name" required /></li>
-				<li><label for="name">Can you transport to specified location?</label>
-					<input style="width: 3em;" type="radio" name="q1" value="y">Yes
-					<input style="width: 3em;" type="radio" name="q1" value="n">No
+				<li><label for="date">Delivery Date:</label> <input type="date" name="date" id="date" required /></li>
+				<li><label for="st-time">Delivery Time Estimate:</label>
+					<input style="width: 5em;" type="time" name="st-time" id="st-time" required />
+					<label style="width: 2em;"for="end-time">To:</label>
+					<input style="width: 5em;" type="time" name="end-time" id="end-time" required />
 				</li>
 				<li><p></p></li>
 

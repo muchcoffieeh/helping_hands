@@ -35,19 +35,25 @@
 			<ul class="newRequest">
 				<li><label for="name">Need:</label> <input type="text" name="name" id="name" required /></li>
 				<li><label for="amt">Amount:</label> <input type="number" name="name" id="number" required /></li>
-				<li><label for="name">Location:</label> <input type="text" name="name" id="name" required /></li>
+				<!-- this will auto populate with the address of organization -->
+				<li><label for="name">Delivery Address:</label> <input placeholder="832 Folsom st" type="text" name="name" id="name" required /></li>
+				<li><label for="name"></label> <input placeholder="San Francisco, CA, 94610" type="text" name="name" id="name" required /></li>
+				<li><label for="st-time">Hours of Operation:</label>
+					<input style="width: 5em;" type="time" name="st-time" id="st-time" required />
+					<label style="width: 4em;"for="end-time">To:</label>
+					<input style="width: 5em;" type="time" name="end-time" id="end-time" required />
+				</li>
 				<li><label for="name">Partial donations accepted?</label>
 					<input style="width: 3em;" type="radio" name="q1" value="y"><label style="width: 1em;">Yes</label>
 					<input style="color: #000; width: 3em;" type="radio" name="q1" value="n"><label style="width: 1em;">No</label>
 				</li>
-				<li><label for="name">Donors need to transport?</label>
-					<input style="width: 3em;" type="radio" name="q1" value="y"><label style="width: 1em;">Yes</label>
-					<input style="color: #000; width: 3em;" type="radio" name="q1" value="n"><label style="width: 1em;">No</label>
-				</li>
+
 				<li><label for="name">Purpose:</label> <input placeholder="If the need is for specific event" type="text" name="name" id="name"/></li>
 				<li><label for="name">Details:</label>
 					<textarea class="desRequest" rows="5" cols="47" placeholder="Optional. However a brief description will help you connect with potential donors."></textarea><br />
 					</textarea></li>
+				<li><label for="date">Expiration Date:</label> <input type="date" name="date" id="date" required /></li>
+
 				<li><br></br></li>
 				<li>
 					<input class="tfbutton" type="submit" value="Submit Request" />
